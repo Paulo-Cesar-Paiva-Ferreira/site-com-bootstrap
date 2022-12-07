@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    margin-bottom: 32px;
+}
+
+header h1{
+    color: rgb(252, 246, 246);
+}
+
+header {
+    background-color: rgb(70, 122, 218);
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.slides img {
+    height: 500px ;
+}
+
+.lancamentos {
+    margin-top: 56px;
+}
+
+.col img {
+    width: 100%;
+}
+
+.col{
+    justify-content: space-between;
+}
+
+footer {
+    background-color: rgb(70, 122, 218);
+    color: white;
+    padding: 8px;
+    margin-top: 56px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+section {
+    margin-top: 24px;
+}
+
+h2 {
+    margin-top: 24px;
+}
+
+p,
+.card {
+    margin-top: 16px;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 8px;
+}
+
+body {
+    background-color: rgb(236, 245, 242);
+}
+
+
+@media screen and (max-width: 767px) {
+    .slides  img{
+        height: 200px;
+    }
+
+    button {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen  and (min-width: 768px) and (max-width: 1023px) {
+    button {
+        margin-bottom: 16px;
+    }
+}

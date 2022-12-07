@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Filmes - o filme que vc procura está aqui</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Faça seu cadastro para receber as novidades em primeira mão.</h5>
+                <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+            </div>
+            <div class="modal-body ">
+                <form>
+                    <label class="form-label" for="nome">Seu nome:</label>
+                    <input class="form-control " type="text" id="nome">
+                    <label class="form-label" for="email">Seu E-mail:</label>
+                    <input class="form-control" type="email" id="email">
+                    <label class="form-label" for="telefone">Seu telefone:</label>
+                    <input class="form-control" type="tel" id="telefone">
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                    <input class="form-check-input" type="checkbox" id="aceito-termos">
+                    </div>
+                </form>
+            </div>
+            <div  class="modal-footer">
+                <button data-bs-dismiss="modal" class="btn btn-danger">Cancelar</button>
+                <button data-bs-dismiss="modal" class="btn btn-success">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<header>
+    <h1 class="container">Play Filmes</h1>
+</header>
+<body>
+    <div class="container menu">
+        <div class="dropdown">
+            <button data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle">
+                Escolher por categoria 
+            </button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                    <a href="#lancamentos">lançamentos</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#terror">terror</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#acao">ação</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#comedia">comedia</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div  class="container slides col-sm-12  col-md-12  ">
+        <div id="carousel-exemplo" class="carousel  carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./images/8196181_x720.jpg"/>
+                    <div class="carousel-caption">
+                </div>
+            </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/Movies.jpeg">
+                    <div class="carousel-caption">
+                </div>
+            </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100"  src="./images/5285370.jpg"/>
+                    <div class="carousel-caption">
+                </div>
+            </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100"  src="./images/velocidade-furiosa-9-adiado-novamente-estreia-agora-em-junho-1614939562896.jpg"/>
+                    <div class="carousel-caption">
+                </div>
+            </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+    </div>
+    <section id="lancamentos" class="lancamentos">
+        <div class="container">
+            <hr>
+            <h2>Lançamentos</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="./images/lan.jpg" alt="">
+                    <h4>A Entrega</h4>
+                    <button class="btn btn-success">assitir online</button>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="./images/lançamento1.jpg" alt="">
+                    <h4>A Fera</h4>
+                    <button class="btn btn-success">assitir online</button>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="./images/lan 2.jpg" alt="">
+                    <h4>Vingança</h4>
+                    <button class="btn btn-success">assitir online</button>
+                </div>
+            </div>
+    </section>
+            <section id="terror" class="lancamentos">
+                <div class="container">
+                    <hr>
+                    <h2>Terror</h2>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <img src="./images/308238.jpg" alt="">
+                            <h4>HellRaiser renascido do inferno</h4>
+                            <button class="btn btn-success">assitir online</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <img src="./images/71RpvDjl2jL._SL1047_.jpg" alt="">
+                            <h4>O Exorcista</h4>
+                            <button class="btn btn-success">assitir online</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <img src="./images/sombras-do-terror-poster.jpg" alt="">
+                            <h4>Sombras do terror</h4>
+                            <button class="btn btn-success">assitir online</button>
+                        </div>
+                    </div>
+            </section>
+            <section id="acao" class="lancamentos">
+                <div class="container">
+                    <hr>
+                    <h2>Ação</h2>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <img src="./images/açao 1.jpg" alt="">
+                            <h4>Tomb Raider a origem</h4>
+                            <button class="btn btn-success">assitir online</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <img src="./images/açao 2.jpg" alt="">
+                            <h4>resident evil 6</h4>
+                            <button class="btn btn-success">assitir online</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <img src="./images/açao 3.jpg" alt="">
+                            <h4>Awake</h4>
+                            <button class="btn btn-success">assitir online</button>
+                        </div>
+                    </div>
+            </section>
+            <section id="comedia" >
+                <div class="container">
+                    <hr>
+                    <h3>Comedia</h>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <img src="./images/comedy 1.jpg" alt="">
+                            <h4>Nem por cima do meu cadaver </h4>
+                            <button class="btn btn-success">assitir online</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <img src="./images/comedy 2.jpg" alt="">
+                            <h4>Um amor a altura</h4>
+                            <button class="btn btn-success">assitir online</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <img src="./images/comedia 4.jpg" alt="">
+                            <h4>The Hangover</h4>
+                            <button class="btn btn-success">assitir online</button>
+                        </div>
+                    </div>
+            </section>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-12 col-md-6 col-lg-4">
+                        <div class="card  text-bg-dark">
+                            <div class="card-header">
+                                Assinante Premium
+                            </div>
+                            <img src="./images/premium.webp" alt="">
+                            <div class="card-body">
+                                <h5 class="card-subtitle">Venha ser Premium</h5>
+                                <p>
+                                    Ser premium tem mais vantagens, pois por um baixo custo você poderá baixar seus filmes em qualquer dispositivo, e assistir onde e hora que quiser.
+                                    clique no botão abaixo e confira nossa super promoção nos planos mensais.
+                                </p>
+                                <a href="#" class="btn btn-primary">Plano premium</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',function() {
+            const modalAlert = new bootstrap.Modal('#exemplo-modal');
+            setTimeout(function() {
+                modalAlert.show();
+            }, 3000)
+        })
+    </script>
+</body>
+<footer>
+    <div class="container">
+        <p>
+            &copy; Play Filmes - todos os direitos reservados - 2022
+        </p>
+    </div>
+</footer>
+</html>
